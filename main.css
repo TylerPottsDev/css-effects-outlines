@@ -1,0 +1,99 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+body {
+	background-color: #eee;
+}
+
+section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	position: sticky;
+	top: 0;
+	margin-bottom: 10rem;
+}
+
+section:last-of-type {
+	margin-bottom: 0;
+}
+
+.button {
+	background-color: #eee;
+}
+
+.button {
+	appearance: none;
+	outline: none;
+	border: none;
+	background: none;
+	cursor: pointer;
+
+	display: inline-block;
+	background-color: crimson;
+	border-radius: 0.5rem;
+	color: #fff;
+	font-size: 2rem;
+	padding: 1rem 2rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin: 0 1rem;
+	transition: 0.2s;
+}
+
+.images {
+	background-color: #212121;
+}
+
+.images img {
+	margin: 0 1rem;
+	width: 400px;
+	max-width: 100%;
+	border-radius: 1rem;
+	transition: 0.2s;
+}
+
+.text {
+	background-color: lightslategrey;
+}
+
+h1 {
+	font-size: 4rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: 0.2s;
+}
+
+
+/* BUTTON OUTLINE EFFECT */
+.button:hover {
+	outline: 5px solid #212121;
+}
+
+.button.offset {
+	outline-offset: 5px;
+}
+
+/* IMAGE OUTLINE EFFECT */
+
+img:hover {
+	outline: 5px solid #fff;
+}
+
+img.offset {
+	outline-offset: 5px;
+}
+
+/* TEXT OUTLINE EFFECT */
+h1:hover {
+	text-shadow: 
+		-2px -2px 0px #fff,
+		2px -2px 0px #fff,
+		-2px 2px 0px #fff,
+		2px 2px 0px #fff;
+}
